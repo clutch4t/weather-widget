@@ -64,7 +64,7 @@
               <div class="selectedPlace">{{ element.location.name }}, {{
                 element.location.country
               }}</div>
-              <div class="removeBtn" @click="removeCity(city)">
+              <div class="removeBtn" @click="removeCity(element)">
                 <img src="../assets/svg/trash.svg" alt="remove">
               </div>
             </div>
@@ -163,7 +163,6 @@ export default {
     },
 
     removeCity(item) {
-      console.log(item);
       this.weatherResponse.forEach((element) => {
         if (item.location.name == element.location.name) {
           let index = this.weatherResponse.indexOf(item);
@@ -212,7 +211,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss">
 
 </style>

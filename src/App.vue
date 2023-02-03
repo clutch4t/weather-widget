@@ -1,5 +1,5 @@
 <template>
-  <div id="#app">
+  <div id="app">
     <WeatherComponent></WeatherComponent>
   </div>
 </template>
@@ -8,7 +8,7 @@
 import WeatherComponent from '@/components/WeatherComponent.vue';
 
 
-export default {
+export default ({
   name: "App",
   props: [],
   components: {
@@ -17,7 +17,7 @@ export default {
   methods: {
 
   }
-}
+})
 
 </script>
 

@@ -1,6 +1,6 @@
 {
   "name": "clutch4t-weather-widget",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
